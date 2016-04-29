@@ -22,7 +22,9 @@ This package includes syntax definitions for the following additional delimiters
 
 #### Color Scheme
 
-`EJS 2` comes with the `Dracula EJS` color scheme, which is a modified version of [zertosh/dracula-theme](https://github.com/zertosh/dracula-theme/tree/dark). You can select it from: `Preferences` &rarr; `Color Scheme` &rarr; `EJS 2`. [`Oceanic Next`](https://github.com/voronianski/oceanic-next-color-scheme) is also a good theme for EJS that works right out of the box.
+`EJS 2` comes with the `Dracula EJS` color scheme, which is a modified version of [zertosh/dracula-theme](https://github.com/zertosh/dracula-theme/tree/dark). You can select it from: `Preferences` &rarr; `Color Scheme` &rarr; `EJS 2`.
+
+[`Oceanic Next`](https://github.com/voronianski/oceanic-next-color-scheme) is also a good color scheme for EJS that works right out of the box.
 
 If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/master/Dracula%20EJS.YAML-tmTheme#L228-241) to make the highlighting more compatible with EJS.
 
