@@ -3,7 +3,7 @@
 name: EJS (<? ?>)
 file_extensions: [ejs]
 first_line_match: ^<\?
-scope: source.ejs
+scope: source.ejs.questionmark
 
 contexts:
   main:
