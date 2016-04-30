@@ -3,6 +3,6 @@
 <?${1:=} ${2:/* js */} $3?>$0
 ]]></content>
 	<tabTrigger>&lt;?</tabTrigger>
-	<scope>source.ejs.questionmark</scope>
+	<scope>text.ejs.questionmark</scope>
 	<description>&lt;?(=|-|_|#) /* js */ (-|_)?&gt;</description>
 </snippet>

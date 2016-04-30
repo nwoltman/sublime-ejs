@@ -8,6 +8,6 @@
 $0
 ]]></content>
 	<tabTrigger>if</tabTrigger>
-	<scope>source.ejs.dollarsign - source.js</scope>
+	<scope>text.ejs.dollarsign - source.js</scope>
 	<description>&lt;$ if () { $&gt; &lt;$ } else { $&gt;</description>
 </snippet>
