@@ -1,6 +1,3 @@
-sublime-ejs
------------
-
 ## Requirements
 
 This package requires that you also install the "Babel" package.
