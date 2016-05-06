@@ -1,7 +1,6 @@
 %YAML 1.2
 ---
 name: EJS (<? ?>)
-file_extensions: [ejs]
 first_line_match: ^<\?
 scope: text.ejs.questionmark
 
