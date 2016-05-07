@@ -1,6 +1,6 @@
 # sublime-ejs
 
-EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax.
+EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax. Also includes some snippets.
 
 > Requires Sublime Text 3 build >=3103 as well as the [Babel](https://packagecontrol.io/packages/Babel) package
 
@@ -28,11 +28,13 @@ This package includes syntax definitions for the following additional delimiters
 
 If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/master/Dracula%20EJS.YAML-tmTheme#L228-241) to make the highlighting more compatible with EJS.
 
-### Pitfalls
+### Shortcomings
 
-Since this syntax definition imports the existing HTML definition and Babel definition for JavaScript instead of writing a full definition from scratch, there are a few pitfalls that cause it to fall short in some areas.
+##### Babel Requirement
 
-##### Highlighting Errors
+The default Sublime JavaScript syntax definition does not have very good support for code that uses ES6+ syntax and the Sublime syntax definition language does not allow you to use an alternate syntax definition if the chosen one does not exist, so Babel will remain a requirement until one of those things changes.
+
+##### Highlighting Hiccup
 
 Currently, this syntax definition cannot recognize when an EJS closing tag (i.e. `%>`) is part of a JavaScript string or regex, so it will end the JavaScript section and return to highlighting HTML even though it shouldn't.
 
@@ -51,10 +53,6 @@ However, you can get around this without changing the meaning of your JavaScript
 const str = 'These are EJS delimiters: <% %\>';
 // Everything is fine here
 ```
-
-##### Babel Requirement
-
-The default Sublime JavaScript syntax definition does not have very good support for code that uses ES2015+ syntax and the Sublime syntax definition language does not allow you to use an alternate syntax definition if the chosen one does not exist, so Babel will remain a requirement until one of those things changes.
 
 ## Contributing
 
