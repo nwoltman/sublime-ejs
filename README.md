@@ -28,6 +28,10 @@ This package includes syntax definitions for the following additional delimiters
 
 If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/master/Dracula%20EJS.YAML-tmTheme#L228-241) to make the highlighting more compatible with EJS.
 
+#### Example (with *Dracula EJS*)
+
+![](example.png)
+
 ### Shortcomings
 
 ##### Babel Requirement
