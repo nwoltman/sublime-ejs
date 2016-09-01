@@ -32,6 +32,14 @@ If you'd prefer to use a different color scheme, you may need to add lines like 
 
 ![](example.png)
 
+#### Snippets
+
+In the HTML scope:
+
++ `<%`+`TAB` - Inserts EJS open/close tags
++ `if`+`TAB` - Inserts EJS `if` statement
++ `for`+`TAB` - Inserts EJS `for` loop
+
 ### Shortcomings
 
 ##### Babel Requirement
