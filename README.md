@@ -1,4 +1,4 @@
-# sublime-ejs
+# EJS 2
 
 EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax. Also includes some snippets.
 
