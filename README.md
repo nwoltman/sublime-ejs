@@ -2,22 +2,23 @@
 
 EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax. Also includes some snippets.
 
-> Requires Sublime Text 3 build >=3103 as well as the [Babel](https://packagecontrol.io/packages/Babel) package
+> Requires Sublime Text 3 build >=3103
 
 ## Installation
 
-Use [Package Control](https://packagecontrol.io/) to install [Babel](https://packagecontrol.io/packages/Babel) and [**EJS 2**](https://packagecontrol.io/packages/EJS%202).
+Use [Package Control](https://packagecontrol.io/docs/usage) to install [**EJS 2**](https://packagecontrol.io/packages/EJS%202).
 
 #### Setting the default syntax
 
-To set the default EJS syntax for a particular file extension:
+By default, files with the extension `.ejs` are opened with the `EJS (<% %>)` syntax.
 
-1. Open a file with that extension
+If you'd like to open files with a different extension as EJS or you want to use delimiters other than `<% %>`, follow these steps to set the default EJS syntax for an extension:
+
+1. Open an EJS file
 2. Select `View` from the menu
 3. Then `Syntax` &rarr; `Open all with current extension as...` &rarr; `EJS 2` &rarr; `EJS (<delimiter>)`
-4. Repeat this for each extension (i.e. `.ejs`)
+4. Repeat this for each extension you want to open as EJS
 
-If you're not using the default delimiters (`<% %>`), you'll want to use the EJS syntax that corresponds with the delimiters you use.
 This package includes syntax definitions for the following additional delimiters: `<? ?>`, `<$ $>`, `<@ @>`.
 
 #### Color Scheme
@@ -40,13 +41,7 @@ In the HTML scope:
 + `if`+`TAB` - Inserts EJS `if` statement
 + `for`+`TAB` - Inserts EJS `for` loop
 
-### Shortcomings
-
-##### Babel Requirement
-
-The default Sublime JavaScript syntax definition does not have very good support for code that uses ES6+ syntax and the Sublime syntax definition language does not allow you to use an alternate syntax definition if the chosen one does not exist, so Babel will remain a requirement until one of those things changes.
-
-##### Highlighting Hiccup
+### Highlighting Hiccup
 
 Currently, this syntax definition cannot recognize when an EJS closing tag (i.e. `%>`) is part of a JavaScript string or regex, so it will end the JavaScript section and return to highlighting HTML even though it shouldn't.
 
@@ -62,8 +57,10 @@ const str = 'These are EJS delimiters: <% %>';
 However, you can get around this without changing the meaning of your JavaScript code by adding a backslash (`\`) before the closing `>` like so:
 
 ```js
+<%
 const str = 'These are EJS delimiters: <% %\>';
 // Everything is fine here
+%>
 ```
 
 ## Contributing

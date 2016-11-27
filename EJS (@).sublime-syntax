@@ -25,7 +25,7 @@ contexts:
       scope: keyword.operator.delimiter.ejs, punctuation.definition.js.end.ejs
       pop: true
     - match: ''
-      push: Packages/Babel/JavaScript (Babel).sublime-syntax
+      push: Packages/EJS 2/JavaScript - Babel.sublime-syntax
       with_prototype:
         - match: '(?=[_-]?@>)'
           scope: punctuation.definition.js.end.ejs
