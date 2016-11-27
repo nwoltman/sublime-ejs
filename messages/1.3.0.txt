@@ -1,5 +1,3 @@
-## EJS 2
-
 ## Version 1.3.0
 
 Starting in this version, this package no longer requires you to have the `Babel` package installed.

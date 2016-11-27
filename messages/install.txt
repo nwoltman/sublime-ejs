@@ -1,5 +1,3 @@
-## EJS 2
-
 Thanks for installing EJS 2 :)
 
 Here are some tips to help you get started with this package:
