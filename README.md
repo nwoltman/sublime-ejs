@@ -40,28 +40,6 @@ In the HTML scope:
 + `if`+`TAB` - Inserts EJS `if` statement
 + `for`+`TAB` - Inserts EJS `for` loop
 
-### Highlighting Hiccup
-
-Currently, this syntax definition cannot recognize when an EJS closing tag (i.e. `%>`) is part of a JavaScript string or regex, so it will end the JavaScript section and return to highlighting HTML even though it shouldn't.
-
-Example:
-
-```js
-<%
-const str = 'These are EJS delimiters: <% %>';
-// Now right here is HTML because of this ^^
-%>
-```
-
-However, you can get around this without changing the meaning of your JavaScript code by adding a backslash (`\`) before the closing `>` like so:
-
-```js
-<%
-const str = 'These are EJS delimiters: <% %\>';
-// Everything is fine here
-%>
-```
-
 ## Contributing
 
 Most problems are best addressed by opening an [issue](https://github.com/nwoltman/sublime-ejs/issues).
