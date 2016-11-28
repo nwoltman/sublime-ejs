@@ -1,6 +1,6 @@
 # EJS 2
 
-EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax. Also includes some snippets.
+EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax. Also includes EJS tag autocompletion and some snippets.
 
 > Requires Sublime Text 3 build >=3103
 
@@ -37,7 +37,6 @@ If you'd prefer to use a different color scheme, you may need to add lines like 
 
 In the HTML scope:
 
-+ `<%`+`TAB` - Inserts EJS open/close tags
 + `if`+`TAB` - Inserts EJS `if` statement
 + `for`+`TAB` - Inserts EJS `for` loop
 

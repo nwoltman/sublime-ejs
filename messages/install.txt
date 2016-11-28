@@ -31,6 +31,5 @@ This package includes syntax definitions for the following additional delimiters
 
 In the HTML scope:
 
-+ `<%`+`TAB` - Inserts EJS open/close tags
 + `if`+`TAB` - Inserts EJS `if` statement
 + `for`+`TAB` - Inserts EJS `for` loop
