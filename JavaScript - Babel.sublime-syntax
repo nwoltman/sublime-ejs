@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-# https://github.com/babel/babel-sublime/blob/master/JavaScript%20(Babel).sublime-syntax
+# From https://github.com/babel/babel-sublime/tree/62123dd58245f40e8864303a833f8cd8feb2ee97
 name: JavaScript - Babel
 scope: source.js
 
