@@ -1,8 +1,6 @@
 # EJS 2
 
-EJS syntax definition for Sublime Text 3. Works with [EJS v2](http://ejs.co/) syntax. Also includes EJS tag autocompletion and some snippets.
-
-> Requires Sublime Text 3 build >=3103
+[EJS](http://ejs.co/) syntax definition for Sublime Text 3. Also includes EJS tag autocompletion and some snippets.
 
 ## Installation
 
@@ -12,12 +10,12 @@ Use [Package Control](https://packagecontrol.io/docs/usage) to install [**EJS 2*
 
 By default, files with the extension `.ejs` are opened with the `EJS (<% %>)` syntax.
 
-If you'd like to open files with a different extension as EJS or you want to use delimiters other than `<% %>`, follow these steps to set the default EJS syntax for an extension:
+If you'd like to open files with a different extension as EJS or if you want to use delimiters other than `<% %>`, follow these steps to set the default EJS syntax for an extension:
 
 1. Open an EJS file
 2. Select `View` from the menu
 3. Then `Syntax` &rarr; `Open all with current extension as...` &rarr; `EJS 2` &rarr; `EJS (<delimiter>)`
-4. Repeat this for each extension you want to open as EJS
+4. Repeat for each extension you want to open as EJS
 
 This package includes syntax definitions for the following additional delimiters: `<? ?>`, `<$ $>`, `<@ @>`.
 
@@ -27,9 +25,9 @@ This package includes syntax definitions for the following additional delimiters
 
 [`Oceanic Next`](https://github.com/voronianski/oceanic-next-color-scheme) is also a good color scheme for EJS that works right out of the box.
 
-If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/master/Dracula%20EJS.YAML-tmTheme#L228-241) to make the highlighting more compatible with EJS.
+If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/master/Dracula%20EJS.YAML-tmTheme#L228-L241) to make the highlighting more compatible with EJS.
 
-#### Example (with *Dracula EJS*)
+#### Preview (with *Dracula EJS*)
 
 ![](example.png)
 
@@ -43,4 +41,3 @@ In the HTML scope:
 ## Contributing
 
 Most problems are best addressed by opening an [issue](https://github.com/nwoltman/sublime-ejs/issues).
-<!-- Also, check out the [contributing guide](https://github.com/nwoltman/sublime-ejs/blob/master/CONTRIBUTING.md). -->
