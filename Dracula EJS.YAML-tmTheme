@@ -13,7 +13,7 @@ settings:
     findHighlight: '#effb7b'
     findHighlightForeground: '#000000'
     foreground: '#f8f8f0'
-    invisibles: '#3b3a32'
+    # invisibles: '#f8f8f259'
     lineHighlight: '#33353a'
     selection: '#383a40'
     selectionBorder: '#222218'
@@ -51,8 +51,14 @@ settings:
     fontStyle: ''
 
 - name: Keyword
-  scope: keyword
+  scope: keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word
   settings:
+    foreground: '#ff79c6'
+
+- name: JavaScript Dollar
+  scope: variable.other.dollar.only.js
+  settings:
+    fontStyle: ''
     foreground: '#ff79c6'
 
 - name: Storage
@@ -67,8 +73,8 @@ settings:
     fontStyle: italic
     foreground: '#8be9fd'
 
-- name: Class name
-  scope: entity.name.class
+- name: Entity name
+  scope: entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)
   settings:
     fontStyle: italic
     foreground: '#50fa7b'
@@ -79,17 +85,17 @@ settings:
     fontStyle: italic underline
     foreground: '#50fa7b'
 
-- name: Function name
-  scope: entity.name.function
-  settings:
-    fontStyle: italic
-    foreground: '#50fa7b'
-
 - name: Function argument
-  scope: variable.parameter
+  scope: variable.parameter - (source.c | source.c++ | source.objc | source.objc++)
   settings:
     fontStyle: italic
     foreground: '#ffb86c'
+
+- name: Language variable
+  scope: variable.language
+  settings:
+    fontStyle: italic
+    foreground: '#8be9fd'
 
 - name: Tag name
   scope: entity.name.tag
@@ -101,6 +107,11 @@ settings:
   scope: entity.other.attribute-name
   settings:
     fontStyle: ''
+    foreground: '#50fa7b'
+
+- name: Function call
+  scope: variable.function
+  settings:
     foreground: '#50fa7b'
 
 - name: Library function
@@ -195,21 +206,16 @@ settings:
   settings:
     fontStyle: bold
 
+- name: Function name
+  scope: entity.name.function
+  settings:
+    fontStyle: italic
+    foreground: '#50fa7b'
+
 - name: String contents
   scope: constant.character.escape
   settings:
     foreground: '#ff79c6'
-
-- name: Function call
-  scope: meta.function-call variable.function
-  settings:
-    foreground: '#50fa7b'
-
-- name: (like) Library class/type
-  scope: variable.language
-  settings:
-    fontStyle: italic
-    foreground: '#8be9fd'
 
 - name: JSON Punctuation
   scope: punctuation.definition.string.begin.json, punctuation.definition.string.end.json

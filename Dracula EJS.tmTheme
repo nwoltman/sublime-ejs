@@ -29,8 +29,6 @@
 				<string>#000000</string>
 				<key>foreground</key>
 				<string>#f8f8f0</string>
-				<key>invisibles</key>
-				<string>#3b3a32</string>
 				<key>lineHighlight</key>
 				<string>#33353a</string>
 				<key>selection</key>
@@ -113,9 +111,22 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word</string>
 			<key>settings</key>
 			<dict>
+				<key>foreground</key>
+				<string>#ff79c6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript Dollar</string>
+			<key>scope</key>
+			<string>variable.other.dollar.only.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
 				<key>foreground</key>
 				<string>#ff79c6</string>
 			</dict>
@@ -148,9 +159,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Class name</string>
+			<string>Entity name</string>
 			<key>scope</key>
-			<string>entity.name.class</string>
+			<string>entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -174,28 +185,28 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Function name</string>
-			<key>scope</key>
-			<string>entity.name.function</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#50fa7b</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Function argument</string>
 			<key>scope</key>
-			<string>variable.parameter</string>
+			<string>variable.parameter - (source.c | source.c++ | source.objc | source.objc++)</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
 				<string>#ffb86c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Language variable</string>
+			<key>scope</key>
+			<string>variable.language</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#8be9fd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -220,6 +231,17 @@
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
+				<key>foreground</key>
+				<string>#50fa7b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function call</string>
+			<key>scope</key>
+			<string>variable.function</string>
+			<key>settings</key>
+			<dict>
 				<key>foreground</key>
 				<string>#50fa7b</string>
 			</dict>
@@ -419,6 +441,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Function name</string>
+			<key>scope</key>
+			<string>entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#50fa7b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>String contents</string>
 			<key>scope</key>
 			<string>constant.character.escape</string>
@@ -426,30 +461,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#ff79c6</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Function call</string>
-			<key>scope</key>
-			<string>meta.function-call variable.function</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#50fa7b</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>(like) Library class/type</string>
-			<key>scope</key>
-			<string>variable.language</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#8be9fd</string>
 			</dict>
 		</dict>
 		<dict>
