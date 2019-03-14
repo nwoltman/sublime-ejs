@@ -6,7 +6,7 @@
 
 Use [Package Control](https://packagecontrol.io/docs/usage) to install [**EJS 2**](https://packagecontrol.io/packages/EJS%202).
 
-#### Setting the default syntax
+### Setting the default syntax
 
 By default, files with the extension `.ejs` are opened with the `EJS (<% %>)` syntax.
 
@@ -19,7 +19,7 @@ To open files with a different extension as EJS, or to use delimiters other than
 
 This package includes syntax definitions for the following additional delimiters: `<? ?>`, `<$ $>`, `<@ @>`.
 
-#### Color Scheme
+### Color Scheme
 
 `EJS 2` comes with the `Dracula EJS` color scheme, which is a modified version of [zertosh/dracula-theme](https://github.com/zertosh/dracula-theme/tree/dark). You can select it from: `Preferences` &rarr; `Color Scheme`.
 
@@ -31,7 +31,7 @@ If you'd prefer to use a different color scheme, you may need to add lines like 
 
 ![](example.png)
 
-#### Snippets
+### Snippets
 
 In the HTML scope:
 
