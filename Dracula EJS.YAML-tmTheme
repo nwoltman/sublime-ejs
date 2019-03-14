@@ -228,6 +228,50 @@ settings:
     foreground: '#f1fa8c'
 
 ################################################################################
+## More highlighting for Flow
+################################################################################
+
+- name: Flow type operator
+  scope: punctuation.separator.type
+  settings:
+    foreground: '#ff79c6'
+
+- name: Flow types
+  scope: support.type.any, support.type.primitive
+  settings:
+    fontStyle: italic
+    foreground: '#bd93f9'
+
+- name: Module object property key
+  scope: meta.object-literal.key
+  settings:
+    foreground: '#f1fa8c'
+
+################################################################################
+## Make highlighting look more like babel-sublime
+################################################################################
+
+- name: Dot accessor
+  scope: punctuation.accessor
+  settings:
+    foreground: '#ff79c6'
+
+- name: Template string expression punctuation
+  scope: punctuation.definition.template-expression
+  settings:
+    foreground: '#ff79c6'
+
+- name: Object key-value separator
+  scope: punctuation.separator.key-value
+  settings:
+    foreground: '#bd93f9'
+
+- name: Constructor call
+  scope: meta.function-call.constructor variable.type
+  settings:
+    foreground: '#50fa7b'
+
+################################################################################
 ## EJS fixes
 ################################################################################
 
