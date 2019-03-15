@@ -126,12 +126,6 @@ settings:
     fontStyle: ''
     foreground: '#8be9fd'
 
-- name: Library class
-  scope: support.class
-  settings:
-    fontStyle: ''
-    foreground: '#8be9fd'
-
 - name: Library type/built-in class
   scope: support.type, support.class.builtin
   settings:
@@ -245,6 +239,7 @@ settings:
 - name: Flow types
   scope: support.type.primitive, support.type.any, support.type.mixed
   settings:
+    fontStyle: ''
     foreground: '#bd93f9'
 
 ################################################################################

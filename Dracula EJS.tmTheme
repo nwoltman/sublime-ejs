@@ -274,19 +274,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Library class</string>
-			<key>scope</key>
-			<string>support.class</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#8be9fd</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Library type/built-in class</string>
 			<key>scope</key>
 			<string>support.type, support.class.builtin</string>
@@ -516,6 +503,8 @@
 			<string>support.type.primitive, support.type.any, support.type.mixed</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string></string>
 				<key>foreground</key>
 				<string>#bd93f9</string>
 			</dict>
