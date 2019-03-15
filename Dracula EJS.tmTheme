@@ -161,7 +161,7 @@
 			<key>name</key>
 			<string>Entity name</string>
 			<key>scope</key>
-			<string>entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)</string>
+			<string>entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label | entity.name.type)</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -274,9 +274,22 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Library class/type</string>
+			<string>Library class</string>
 			<key>scope</key>
-			<string>support.type, support.class</string>
+			<string>support.class</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#8be9fd</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Library type/built-in class</string>
+			<key>scope</key>
+			<string>support.type, support.class.builtin</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -443,11 +456,11 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function</string>
+			<string>entity.name.function - entity.name.function.constructor</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string></string>
 				<key>foreground</key>
 				<string>#50fa7b</string>
 			</dict>
@@ -489,7 +502,7 @@
 			<key>name</key>
 			<string>Flow type operator</string>
 			<key>scope</key>
-			<string>punctuation.separator.type</string>
+			<string>punctuation.separator.type, meta.type.object punctuation.separator.key-value</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -500,24 +513,11 @@
 			<key>name</key>
 			<string>Flow types</string>
 			<key>scope</key>
-			<string>support.type.any, support.type.primitive</string>
+			<string>support.type.primitive, support.type.any, support.type.mixed</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
 				<key>foreground</key>
 				<string>#bd93f9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Module object property key</string>
-			<key>scope</key>
-			<string>meta.object-literal.key</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#f1fa8c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -546,7 +546,7 @@
 			<key>name</key>
 			<string>Object key-value separator</string>
 			<key>scope</key>
-			<string>punctuation.separator.key-value</string>
+			<string>meta.object-literal punctuation.separator.key-value</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

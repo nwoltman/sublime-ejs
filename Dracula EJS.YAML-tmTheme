@@ -74,7 +74,7 @@ settings:
     foreground: '#8be9fd'
 
 - name: Entity name
-  scope: entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)
+  scope: entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label | entity.name.type)
   settings:
     fontStyle: italic
     foreground: '#50fa7b'
@@ -126,8 +126,14 @@ settings:
     fontStyle: ''
     foreground: '#8be9fd'
 
-- name: Library class/type
-  scope: support.type, support.class
+- name: Library class
+  scope: support.class
+  settings:
+    fontStyle: ''
+    foreground: '#8be9fd'
+
+- name: Library type/built-in class
+  scope: support.type, support.class.builtin
   settings:
     fontStyle: italic
     foreground: '#8be9fd'
@@ -193,7 +199,7 @@ settings:
     foreground: '#ff5555'
 
 ################################################################################
-## not defined in Monokai
+## Not defined in Monokai
 ################################################################################
 
 - name: Flow
@@ -207,9 +213,9 @@ settings:
     fontStyle: bold
 
 - name: Function name
-  scope: entity.name.function
+  scope: entity.name.function - entity.name.function.constructor
   settings:
-    fontStyle: italic
+    fontStyle: ''
     foreground: '#50fa7b'
 
 - name: String contents
@@ -232,20 +238,14 @@ settings:
 ################################################################################
 
 - name: Flow type operator
-  scope: punctuation.separator.type
+  scope: punctuation.separator.type, meta.type.object punctuation.separator.key-value
   settings:
     foreground: '#ff79c6'
 
 - name: Flow types
-  scope: support.type.any, support.type.primitive
+  scope: support.type.primitive, support.type.any, support.type.mixed
   settings:
-    fontStyle: italic
     foreground: '#bd93f9'
-
-- name: Module object property key
-  scope: meta.object-literal.key
-  settings:
-    foreground: '#f1fa8c'
 
 ################################################################################
 ## Make highlighting look more like babel-sublime
@@ -262,7 +262,7 @@ settings:
     foreground: '#ff79c6'
 
 - name: Object key-value separator
-  scope: punctuation.separator.key-value
+  scope: meta.object-literal punctuation.separator.key-value
   settings:
     foreground: '#bd93f9'
 
