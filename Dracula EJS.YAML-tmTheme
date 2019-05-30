@@ -55,12 +55,6 @@ settings:
   settings:
     foreground: '#ff79c6'
 
-- name: JavaScript Dollar
-  scope: variable.other.dollar.only.js
-  settings:
-    fontStyle: ''
-    foreground: '#ff79c6'
-
 - name: Storage
   scope: storage
   settings:
@@ -109,6 +103,12 @@ settings:
     fontStyle: ''
     foreground: '#50fa7b'
 
+- name: CSS pseudo class/element
+  scope: (entity.other.pseudo-class | entity.other.pseudo-element) - entity.other invalid
+  settings:
+    fontStyle: ''
+    foreground: '#50fa7b'
+
 - name: Function call
   scope: variable.function
   settings:
@@ -126,8 +126,8 @@ settings:
     fontStyle: ''
     foreground: '#8be9fd'
 
-- name: Library type/built-in class
-  scope: support.type, support.class.builtin
+- name: Library type/built-in classes
+  scope: support.type, support.class.builtin, support.class.error
   settings:
     fontStyle: italic
     foreground: '#8be9fd'

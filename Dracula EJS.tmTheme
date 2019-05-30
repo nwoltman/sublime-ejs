@@ -120,19 +120,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>JavaScript Dollar</string>
-			<key>scope</key>
-			<string>variable.other.dollar.only.js</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#ff79c6</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Storage</string>
 			<key>scope</key>
 			<string>storage</string>
@@ -237,6 +224,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>CSS pseudo class/element</string>
+			<key>scope</key>
+			<string>(entity.other.pseudo-class | entity.other.pseudo-element) - entity.other invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#50fa7b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Function call</string>
 			<key>scope</key>
 			<string>variable.function</string>
@@ -274,9 +274,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Library type/built-in class</string>
+			<string>Library type/built-in classes</string>
 			<key>scope</key>
-			<string>support.type, support.class.builtin</string>
+			<string>support.type, support.class.builtin, support.class.error</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
