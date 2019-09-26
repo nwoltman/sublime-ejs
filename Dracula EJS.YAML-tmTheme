@@ -252,7 +252,7 @@ settings:
     foreground: '#ff79c6'
 
 - name: Template string expression punctuation
-  scope: punctuation.definition.template-expression
+  scope: punctuation.section.interpolation
   settings:
     foreground: '#ff79c6'
 

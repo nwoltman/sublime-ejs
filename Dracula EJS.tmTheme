@@ -524,7 +524,7 @@
 			<key>name</key>
 			<string>Template string expression punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition.template-expression</string>
+			<string>punctuation.section.interpolation</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
