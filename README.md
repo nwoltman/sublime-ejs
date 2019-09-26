@@ -1,6 +1,6 @@
 # EJS 2
 
-[EJS](http://ejs.co/) syntax definition for Sublime Text 3. Also includes EJS tag autocompletion and some snippets.
+[EJS](http://ejs.co/) syntax definition for Sublime Text 3. Includes EJS tag autocompletion and snippets.
 
 ## Installation
 
@@ -25,7 +25,7 @@ This package includes syntax definitions for the following additional delimiters
 
 [`Oceanic Next`](https://github.com/voronianski/oceanic-next-color-scheme) is also a good color scheme for EJS that works right out of the box.
 
-If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/master/Dracula%20EJS.YAML-tmTheme#L228-L241) to make the highlighting more compatible with EJS.
+If you'd prefer to use a different color scheme, you may need to add lines like [these](https://github.com/nwoltman/sublime-ejs/blob/a7cceaf26f3c3dd0ea4d64f9303c95d632f9d9e4/Dracula%20EJS.YAML-tmTheme#L273-L286) to make the highlighting more compatible with EJS.
 
 #### Preview (with *Dracula EJS*)
 
