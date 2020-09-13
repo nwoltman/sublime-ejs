@@ -1,6 +1,8 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 name: Dracula
 
+colorSpaceName: sRGB
+
 settings:
 - settings:
     activeGuide: '#9d550fb0'
