@@ -1,6 +1,6 @@
 # EJS 2
 
-[EJS](http://ejs.co/) syntax definition for Sublime Text 3. Includes EJS tag autocompletion and snippets.
+[EJS](http://ejs.co/) syntax definition for Sublime Text 3 & 4. Includes EJS tag autocompletion and snippets.
 
 ## Installation
 
