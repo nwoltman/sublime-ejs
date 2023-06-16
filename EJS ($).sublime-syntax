@@ -1,32 +1,10 @@
 %YAML 1.2
 ---
 name: EJS (<$ $>)
+version: 2
 first_line_match: ^<\$
 scope: text.ejs.dollarsign
+extends: Packages/EJS 2/EJS.sublime-syntax
 
-contexts:
-  main:
-    - match: ''
-      push: Packages/HTML/HTML.sublime-syntax
-      with_prototype:
-        - match: '<\$#'
-          scope: punctuation.definition.comment.begin.ejs
-          push: comment
-        - match: '<\$(?!\$)[=_-]?'
-          scope: keyword.operator.delimiter.ejs, punctuation.definition.js.begin.ejs
-          push: js
-  comment:
-    - meta_scope: comment.block.ejs
-    - match: '\$>'
-      scope: punctuation.definition.comment.end.ejs
-      pop: true
-  js:
-    - match: '[_-]?\$>'
-      scope: keyword.operator.delimiter.ejs, punctuation.definition.js.end.ejs
-      pop: true
-    - match: ''
-      push: Packages/EJS 2/JavaScript - EJS.sublime-syntax
-      with_prototype:
-        - match: '(?=[_-]?\$>)'
-          scope: punctuation.definition.js.end.ejs
-          pop: true
+variables:
+  delimiter: '\$'

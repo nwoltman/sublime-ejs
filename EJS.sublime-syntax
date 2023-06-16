@@ -1,33 +1,31 @@
 %YAML 1.2
 ---
 name: EJS (<% %>)
+version: 2
 file_extensions: [ejs]
 first_line_match: ^<%
 scope: text.ejs.percentsign
+
+variables:
+  delimiter: '%'
 
 contexts:
   main:
     - match: ''
       push: Packages/HTML/HTML.sublime-syntax
       with_prototype:
-        - match: '<%#'
+        - match: '<{{delimiter}}#'
           scope: punctuation.definition.comment.begin.ejs
           push: comment
-        - match: '<%(?!%)[=_-]?'
+        - match: '<{{delimiter}}(?!{{delimiter}})[=_-]?'
           scope: keyword.operator.delimiter.ejs, punctuation.definition.js.begin.ejs
-          push: js
+          embed: scope:source.js
+          embed_scope: source.js.embedded.ejs
+          escape: '[_-]?{{delimiter}}>'
+          escape_captures:
+            0: keyword.operator.delimiter.ejs, punctuation.definition.js.end.ejs
   comment:
     - meta_scope: comment.block.ejs
-    - match: '%>'
+    - match: '{{delimiter}}>'
       scope: punctuation.definition.comment.end.ejs
       pop: true
-  js:
-    - match: '[_-]?%>'
-      scope: keyword.operator.delimiter.ejs, punctuation.definition.js.end.ejs
-      pop: true
-    - match: ''
-      push: Packages/EJS 2/JavaScript - EJS.sublime-syntax
-      with_prototype:
-        - match: '(?=[_-]?%>)'
-          scope: punctuation.definition.js.end.ejs
-          pop: true

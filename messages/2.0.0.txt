@@ -1,0 +1,4 @@
+## Version 2.0.0
+
+- Updated to version 2 of Sublime Text's syntax definitions. The minimum supported Sublime Text version is now 4075.
+- Now using Sublime Text's native JavaScript syntax for highlighting JavaScript within EJS (instead of a copy of the old Babel JS syntax definition)

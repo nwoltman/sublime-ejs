@@ -21,7 +21,7 @@ This package includes syntax definitions for the following additional delimiters
 
 ### Color Scheme
 
-`EJS 2` comes with the `Dracula EJS` color scheme, which is a modified version of [zertosh/dracula-theme](https://github.com/zertosh/dracula-theme/tree/dark). You can select it from: `Preferences` &rarr; `Color Scheme`.
+`EJS 2` comes with the `Dracula EJS` color scheme, which is a modified/updated version of [zertosh](https://github.com/zertosh)’s old dracula theme. You can select it from: `Preferences` &rarr; `Color Scheme`.
 
 [`Oceanic Next`](https://github.com/voronianski/oceanic-next-color-scheme) is also a good color scheme for EJS that works right out of the box.
 
