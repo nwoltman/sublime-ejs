@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: EJS (<$ $>)
+name: EJS (<＄ ＄>)
 version: 2
 first_line_match: ^<\$
 scope: text.ejs.dollarsign
